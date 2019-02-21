@@ -1,0 +1,7 @@
+import mongoose from 'mongoose';
+import Model from '../../lib/Model';
+let Schema = mongoose.Schema;
+
+module.exports = Model(
+  <%- attributes %>
+, '<%= name %>');

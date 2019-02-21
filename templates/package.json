@@ -1,0 +1,33 @@
+{
+  "name": "beeaver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "babel-node ./scripts/init.js",
+    "start": "nodemon --exec babel-node index.js",
+    "dev": "nodemon --exec babel-node index.js",
+    "db:models": "babel-node ./scripts/db/models.js",
+    "db:seed": "babel-node ./scripts/db/seed.js",
+    "controllers": "babel-node ./scripts/controllers.js",
+    "routes": "babel-node ./scripts/router.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boom": "^7.2.0",
+    "hapi": "^18.0.0",
+    "mongoose": "^5.4.7",
+    "mongoose-createdat-updatedat": "^1.1.0",
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "commander": "^2.19.0",
+    "ejs": "^2.6.1",
+    "fs": "^0.0.1-security",
+    "jest": "^24.0.0",
+    "nodemon": "^1.18.4",
+    "path": "^0.12.7"
+  }
+}

@@ -1,0 +1,24 @@
+import <%= controller %> from '../controllers/<%= controller %>';
+
+module.exports = [
+  {
+    method:'GET',
+    path:'/<%= model %>',
+    handler: <%= controller %>.list
+  },
+  {
+    method:'POST',
+    path:'/<%= model %>',
+    handler: <%= controller %>.save
+  },
+  {
+    method:'PUT',
+    path:'/<%= model %>/{<%= key %>}',
+    handler: <%= controller %>.update
+  },
+  {
+    method:'DELETE',
+    path:'/<%= model %>/{<%= key %>}',
+    handler: <%= controller %>.delete
+  }
+];
